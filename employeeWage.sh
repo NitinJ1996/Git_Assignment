@@ -5,7 +5,7 @@ work_days_per_month=20
 working_days=0
 total_work_hours=0
 
-while [ $working_days -le $work_days_per_month ]
+while [[ ($total_work_hours -le 100) || ($working_days -le $work_days_per_month) ]]
 do
 isfulltime=1
 isparttime=2
